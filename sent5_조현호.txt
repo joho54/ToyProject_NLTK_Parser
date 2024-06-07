@@ -1,9 +1,9 @@
-(문장
-  (SBARQ
-    (WH명사구 (WH결정자 Which) (단수형_명사 option))
-    (부속의문문
-      (DO do)
-      (명사구 (인칭대명사 you))
-      (동사구 (동사 want) (동사구 (TO to) (동사구 (동사 select)))))
-    (물음표 ?)))
+(S
+  (DirectQ
+    (WH_NP (WHDT Which) (SingularN option))
+    (YesNoQ
+      (AuxV do)
+      (NP (PerP you))
+      (VP (V want) (VP (TO to) (VP (V select))))))
+  (Punc (QMark ?)))
 

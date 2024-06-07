@@ -1,12 +1,12 @@
-(문장
-  (의문문
-    (조동사 Could)
-    (명사구 (인칭대명사 you))
-    (동사구
-      (동사 show)
-      (명사구 (인칭대명사 me))
-      (명사구
-        (명사구 (한정사 the) (단수형_명사 way))
-        (전치사구 (TO to) (명사구 (단수형_명사 City) (고유명사 Hall)))))
-    (물음표 ?)))
+(S
+  (YesNoQ
+    (AuxV Could)
+    (NP (PerP you))
+    (VP
+      (V show)
+      (NP (PerP me))
+      (NP
+        (NP (DT the) (SingularN way))
+        (PreposP (TO to) (NP (SingularN City) (ProperN Hall))))))
+  (Punc (QMark ?)))
 
