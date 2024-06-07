@@ -1,6 +1,6 @@
 (S
   (DirectQ
-    (WH_NP (WHDT Which) (SingularN option))
+    (WH-NP (WH-DT Which) (SingularN option))
     (YesNoQ
       (AuxV do)
       (NP (PerP you))
