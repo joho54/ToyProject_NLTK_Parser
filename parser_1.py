@@ -9,7 +9,7 @@ sentences = ['Could you show me the way to City Hall ?',
 'When she just finished cleaning her room, her mother called her.',
 'Which option do you want to select ?']
 
-sent = sentences[1]
+sent = sentences[0]
 
 # (2) Make your CFG file for parsing your sentence.
 
