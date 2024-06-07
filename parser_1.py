@@ -9,7 +9,7 @@ sentences = ['Could you show me the way to City Hall ?',
 'When she just finished cleaning her room, her mother called her.',
 'Which option do you want to select ?']
 
-sent = sentences[0]
+sent = sentences[4]
 
 # (2) Make your CFG file for parsing your sentence.
 
@@ -18,15 +18,18 @@ sent = sentences[0]
 ################################################################
 
 import nltk
+
 grammar = nltk.data.load("file:.\\grammar.cfg")
 parser = nltk.ChartParser(grammar)
-tokens = nltk.tokenize.word_tokenize(sent)
-print("tokens: ", tokens)
-trees = parser.parse(tokens)
-print("trees: ", trees)
 
-with open(".\\result.txt", "w") as f1:
-    for tree in trees:
-        print(tree)
-        f1.write(str(tree)+"\n\n")
-        tree.draw()
+for sent in sentences:
+    tokens = nltk.tokenize.word_tokenize(sent)
+    trees = parser.parse(tokens)
+
+    with open(".\\result.txt", "w") as f1:
+        for tree in trees:
+            print(tree)
+            f1.write(str(tree)+"\n\n")
+            tree.draw()
+            
+            
